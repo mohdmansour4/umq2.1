@@ -115,7 +115,7 @@ function displayData(data) {
     // Sort the data by date (newest first)
     const sortedData = sortDataByDate(data);
     
-    let html = '<table border="1" style="direction: rtl; text-align: center;"><tr><th>التاريخ</th><th>اسم الموظف</th><th>المحصول</th><th>نسبة التركيز TDS%</th><th>الفرع</th><th>الطحنة</th><th>التركيز المناسب TDS%</th><th>الاجراء</th><th>Column S (Checkbox)</th></tr>'; // Added "Column S"
+    let html = '<table border="1" style="direction: rtl; text-align: center;"><tr><th>التاريخ</th><th>المحصول </th><th>المحصول</th><th>نسبة التركيز TDS%</th><th>الفرع</th><th>الطحنة</th><th>التركيز المناسب TDS%</th><th>الاجراء</th><th>Column S (Checkbox)</th></tr>'; // Added "Column S"
 
     sortedData.forEach((row, index) => {
         const columnQ = row[16] || ''; // Column Q value (text)
